@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <script type="module" src="/src/collabs-bundle.ts"></script>
+    
+    <script>
+      if (window.collabs == null) {
+      	document.addEventListener(
+      	  'collabs',(Event) => console.log('"collabs" has become available',window.collabs)
+      	)
+      }
+    
+      function waitForCollabs () {
+      	if (window.collabs == null) {
+      		console.log('waiting for "collabs"')
+      		setTimeout(waitForCollabs,100)
+      	} else {
+      		console.log('"collabs" has become available',window.collabs)
+      	}
+      }
+      waitForCollabs()
+    </script>
+  </body>
+</html>
