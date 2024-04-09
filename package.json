@@ -31,8 +31,6 @@
     "@collabs/indexeddb": "^0.13.4",
     "@collabs/local-storage": "^0.13.4",
     "@collabs/tab-sync": "^0.13.4",
-    "@collabs/ws-client": "^0.13.4",
-    "vite-plugin-top-level-await": "^1.4.1",
-    "vite-plugin-wasm": "^3.3.0"
+    "@collabs/ws-client": "^0.13.4"
   }
 }
